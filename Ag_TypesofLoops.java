@@ -1,4 +1,3 @@
-import java.util.*;
 public class Ag_TypesofLoops {
     public static void main(String args[]){
         // Types of loops: for, while, and do-while
