@@ -1,4 +1,3 @@
-import java.util.*;
 public class Ah_Pattern {
     public static void main(String args[]){
     //Patterns: printing patterns using loops
