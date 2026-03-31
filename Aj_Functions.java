@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.function.IntUnaryOperator;
 public class Aj_Functions {
     public static void printMyName(String name){
         System.out.println("Hello, " + name);
