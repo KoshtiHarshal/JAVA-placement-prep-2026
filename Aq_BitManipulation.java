@@ -15,13 +15,11 @@ public class Aq_BitManipulation {
             System.out.println("Bit at position " + getpos + " is 0");
         } 
 
-
         //Set bit
         int setpos = 1; // Position to set (0-based index)
         int set_bitMask = 1 << setpos; // Create a bitmask by left-shifting 1 to the desired position
         int newnum1 = n | set_bitMask; // Use bitwise OR to set the bit
         System.out.println("After setting bit at position " + setpos + ": " + newnum1); // 7 (0111 in binary)
-
 
         //Clear bit
         int clearPos = 2; // Position to clear (0-based index)
