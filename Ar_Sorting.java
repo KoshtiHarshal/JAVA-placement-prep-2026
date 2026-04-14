@@ -50,7 +50,3 @@ public class Ar_Sorting {
         printArray(arr); 
     }
 }
-
-
-
-
