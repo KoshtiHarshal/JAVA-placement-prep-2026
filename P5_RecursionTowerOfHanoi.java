@@ -1,3 +1,5 @@
+// P : Print the steps to solve Tower of Hanoi problem for n disks.
+
 public class P5_RecursionTowerOfHanoi {
     public static void towerOfHanoi(int n, String src, String helper, String dest) {
         if (n == 1) {
@@ -13,3 +15,5 @@ public class P5_RecursionTowerOfHanoi {
         towerOfHanoi(n, "S", "H", "D");
     }
 }
+
+// Time Complexity : O(2^n)
