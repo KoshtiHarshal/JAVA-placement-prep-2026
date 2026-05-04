@@ -13,8 +13,7 @@ public class P9_MoveXsToEnd {
         if(ch == 'x'){
             count++;
             moveX(str, idx + 1, count, newStr);
-        }
-        else {
+        }else{
             newStr += ch;
             moveX(str, idx + 1, count, newStr);
         }
