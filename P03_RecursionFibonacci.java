@@ -1,5 +1,6 @@
 // P : Print the Fibonacci sequence till nth term.
-public class P3_RecursionFibonacci {
+
+public class P03_RecursionFibonacci {
     public static int fibonacci(int n){
         if(n==0){
             return 0;

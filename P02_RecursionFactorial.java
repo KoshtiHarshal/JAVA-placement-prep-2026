@@ -1,6 +1,6 @@
 // P : Print the factorial of a number n using recursion.
 
-public class P2_RecursionFactorial {
+public class P02_RecursionFactorial {
     public static int fact(int n){
         if (n==1 || n==0){
             return 1;

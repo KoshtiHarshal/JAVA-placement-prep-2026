@@ -1,6 +1,6 @@
 // P : Print the sum of first n natural numbers using recursion.
 
-public class P1_RecursionSUMofNUM {
+public class P01_RecursionSUMofNUM {
     public static int sumOfNum(int n){
         if (n==1){
             return 1; 
