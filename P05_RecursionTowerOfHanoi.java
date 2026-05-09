@@ -1,6 +1,6 @@
 // P : Print the steps to solve Tower of Hanoi problem for n disks.
 
-public class P5_RecursionTowerOfHanoi {
+public class P05_RecursionTowerOfHanoi {
     public static void towerOfHanoi(int n, String src, String helper, String dest) {
         if (n == 1) {
             System.out.println("transfer disk " + n + " from " + src + " to " + dest);

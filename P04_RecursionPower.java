@@ -1,6 +1,6 @@
 // P : Print the power of a number x raised to the power n.
 
-public class P4_RecursionPower{
+public class P04_RecursionPower{
     public static int calcPower(int x, int n) {
         if (n==0) {
             return 1;
