@@ -1,6 +1,6 @@
 // P : Find the First and Last Occurrence of an element in String.
 
-public class P7_1stAndLastOccurence{
+public class P07_1stAndLastOccurence{
     public static int first = -1;
     public static int last =-1;
 

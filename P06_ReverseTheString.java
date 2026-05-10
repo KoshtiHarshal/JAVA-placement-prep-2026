@@ -1,6 +1,6 @@
 // P : Print a string in reverse.
 
-public class P6_ReverseTheString{
+public class P06_ReverseTheString{
     public static void printRev(String str , int idx){
         if ( idx == 0){
             System.out.println(str.charAt(idx));
