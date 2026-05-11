@@ -1,6 +1,6 @@
 // P : Move all the 'x' in a string to the end of the string.
 
-public class P9_MoveXsToEnd {
+public class P09_MoveXsToEnd {
     public static void moveX(String str, int idx, int count, String newStr){
         if(idx ==  str.length()){
             for(int i=0; i<count; i++){
