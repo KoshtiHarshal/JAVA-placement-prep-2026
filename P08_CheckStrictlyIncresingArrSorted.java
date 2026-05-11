@@ -1,6 +1,6 @@
 // P : Check if an array is sorted(Strictly Increasing).
 
-public class P8_CheckStrictlyIncresingArrSorted{
+public class P08_CheckStrictlyIncresingArrSorted{
     public static boolean isSorted(int arr[] , int idx){
         if(idx == arr.length-1){
             return true;
