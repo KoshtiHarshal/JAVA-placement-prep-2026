@@ -1,8 +1,8 @@
-// // OOPS stands for Object Oriented Programming System
-// // Class: A class is a blueprint for creating objects. It defines the properties and behaviors of the objects.
-// // Object: An object is an instance of a class. It has its own state and behavior.
-// // Method: A method is a function that is defined inside a class. It defines the behavior of the objects of the class.
-// // In this example, we have a class named "Cars" which has attributes like name, model_name, color, and price. It also has methods like carInfo() and race(). We create two objects of the class "Cars" named c1 and c2, and we set their attributes and call their methods to display the information about the cars.
+// OOPS stands for Object Oriented Programming System
+// Class: A class is a blueprint for creating objects. It defines the properties and behaviors of the objects.
+// Object: An object is an instance of a class. It has its own state and behavior.
+// Method: A method is a function that is defined inside a class. It defines the behavior of the objects of the class.
+// In this example, we have a class named "Cars" which has attributes like name, model_name, color, and price. It also has methods like carInfo() and race(). We create two objects of the class "Cars" named c1 and c2, and we set their attributes and call their methods to display the information about the cars.
 
 class Cars { // This is a class named "Cars"
     String name; // This is an attribute of the class "Cars"
