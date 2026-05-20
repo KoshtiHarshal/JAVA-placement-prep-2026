@@ -1,4 +1,4 @@
-// OOPS stands for Object Oriented Programming System
+// OOPS : Object Oriented Programming System
 // Class: A class is a blueprint for creating objects. It defines the properties and behaviors of the objects.
 // Object: An object is an instance of a class. It has its own state and behavior.
 // Method: A method is a function that is defined inside a class. It defines the behavior of the objects of the class.
