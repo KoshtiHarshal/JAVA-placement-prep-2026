@@ -2,32 +2,45 @@
 
 // Example of abstraction
 
-abstract class Animal{
-    abstract void walk(); // Abstract method, no implementation
-    public void eat() { // Concrete method with implementation
-        System.out.println("This animal eats food."); // Concrete method that can be used by all subclasses
+
+abstract class AbstractionAnimal {
+    abstract void walk(); 
+    AbstractionAnimal(){ 
+        System.out.println("This is an animal."); 
     }
-}
-class Dog extends Animal{
-    @Override
-    void walk() { // Providing implementation for the abstract method
-        System.out.println("The dog walks on four legs."); // Implementing the abstract method
-    }
-}
-class Cat extends Animal{
-    @Override
-    void walk() { // Providing implementation for the abstract method
-        System.out.println("The cat walks on four legs."); // Implementing the abstract method
+    public void eat() { 
+        System.out.println("This animal eats food."); 
     }
 }
 
-public class Bb_Abstraction{
+class AbstractionDog extends AbstractionAnimal {
+    AbstractionDog(){ 
+        System.out.println("This is a dog."); 
+    }
+    @Override
+    public void walk() { 
+        System.out.println("The dog walks on four legs."); 
+    }
+}
+
+class AbstractionCat extends AbstractionAnimal {
+    AbstractionCat(){ 
+        System.out.println("This is a cat."); 
+    }
+    @Override
+    public void walk() { 
+        System.out.println("The cat walks on four legs."); 
+    }
+}
+
+public class Bb_Abstraction {
     public static void main(String[] args) {
-        Dog dog = new Dog(); // Creating an instance of the Dog class
-        dog.walk(); // Calling the implemented abstract method
-        dog.eat(); // Calling the concrete method from the abstract class
-        Cat cat = new Cat(); // Creating an instance of the Cat class
-        cat.walk(); // Calling the implemented abstract method
-        cat.eat(); // Calling the concrete method from the abstract class
-        }
+        AbstractionAnimal dog = new AbstractionDog(); 
+        dog.walk(); 
+        dog.eat(); 
+        
+        AbstractionAnimal cat = new AbstractionCat(); 
+        cat.walk(); 
+        cat.eat(); 
+    }
 }
