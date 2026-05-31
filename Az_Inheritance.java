@@ -14,7 +14,7 @@ class Parent{ // Parent class
     }
 }
 class Child extends Parent{ // Child class inherits from Parent class
-    public void display(){
+    public void childDisplay(){
         System.out.println("I am a child class");
         super.display(); // Call the parent class method
     }
@@ -55,17 +55,17 @@ class M4 extends BMW{
 }
 
 // Example of Hierarchical inheritance
-class Animal { // Parent class
+class InheritAnimal { // Parent class
     void eat() {
         System.out.println("This animal eats food."); // Common method for all animals
     }
 }
-class Dog extends Animal { // Child class inherits from Animal class
+class InheritDog extends InheritAnimal { // Child class inherits from InheritAnimal class
     void bark() {
         System.out.println("The dog barks."); // Specific method for Dog class
     }
 }
-class Cat extends Animal { // Another child class inherits from Animal class
+class InheritCat extends InheritAnimal { // Another child class inherits from InheritAnimal class
     void meow() {
         System.out.println("The cat meows."); // Specific method for Cat class
     }
@@ -74,7 +74,7 @@ class Cat extends Animal { // Another child class inherits from Animal class
 public class Az_Inheritance { 
     public static void main(String[] args) {
         Child child = new Child(); // Create an instance of the Child class
-        child.display(); // Call the display method of the Child class, which also calls the Parent class method
+        child.childDisplay(); // Call the childDisplay method of the Child class, which also calls the Parent class method
 
         Triangle triangle = new Triangle(); // Create an instance of the Triangle class
         triangle.color = "Red"; // Inherit color property from Shape class
@@ -86,11 +86,11 @@ public class Az_Inheritance {
         m4.color = "Blue";
         m4.display(); // Call the display method of the M4 class, which also inherits from BMW and Cars classes
 
-        Dog myDog = new Dog(); // Create an instance of the Dog class, which inherits from Animal class
-        myDog.eat(); // Call the eat method inherited from the Animal class
-        myDog.bark(); // Call the bark method specific to the Dog class
-        Cat myCat = new Cat(); // Create an instance of the Cat class, which also inherits from Animal class
-        myCat.eat(); // Call the eat method inherited from the Animal class
-        myCat.meow(); // Call the meow method specific to the Cat class
+        InheritDog myDog = new InheritDog(); // Create an instance of the InheritDog class, which inherits from InheritAnimal class
+        myDog.eat(); // Call the eat method inherited from the InheritAnimal class
+        myDog.bark(); // Call the bark method specific to the InheritDog class
+        InheritCat myCat = new InheritCat(); // Create an instance of the InheritCat class, which also inherits from InheritAnimal class
+        myCat.eat(); // Call the eat method inherited from the InheritAnimal class
+        myCat.meow(); // Call the meow method specific to the InheritCat class
     }
 }
