@@ -27,23 +27,24 @@ public class Aj_Functions {
     }
 
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your name:");
-        String name = sc.nextLine();
-        printMyName(name);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter your name:");
+            String name = sc.nextLine();
+            printMyName(name);
 
-        System.out.println("Enter two numbers:");
-        int a = sc.nextInt();
-        System.out.println("Enter second number:");
-        int b = sc.nextInt();
+            System.out.println("Enter two numbers:");
+            int a = sc.nextInt();
+            System.out.println("Enter second number:");
+            int b = sc.nextInt();
 
-        System.out.println("Sum of " + a + " and " + b + " is: " + calculateSum(a, b));
+            System.out.println("Sum of " + a + " and " + b + " is: " + calculateSum(a, b));
 
-        System.out.println("Product of " + a + " and " + b + " is: " + calculateProduct(a, b));
+            System.out.println("Product of " + a + " and " + b + " is: " + calculateProduct(a, b));
 
-        System.out.println("Enter a number to calculate its factorial:");
-        int n = sc.nextInt();
-        fact(n);
+            System.out.println("Enter a number to calculate its factorial:");
+            int n = sc.nextInt();
+            fact(n);
+        }
     }
 
 }
