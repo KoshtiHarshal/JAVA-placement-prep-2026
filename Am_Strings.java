@@ -7,9 +7,9 @@ public class Am_Strings{
         
         // String Input from user
         Scanner sc1 = new Scanner(System.in);
-        System.out.print("Enter your  First name: ");
+        System.out.print("Enter your First name: ");
         String str2 = sc1.nextLine(); //.next() reads a single word. Use .nextLine() to read a full line of input.
-        System.out.println("Hello, " + str2 + "!");
+        System.out.println(str1 + ", " + str2 + "!");
         System.out.print("Enter your Last name: ");
         String str3 = sc1.nextLine();
         sc1.close();
