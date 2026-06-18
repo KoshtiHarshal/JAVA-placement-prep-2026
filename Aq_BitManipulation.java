@@ -28,20 +28,21 @@ public class Aq_BitManipulation {
         System.out.println("After clearing bit at position " + clearPos + ": " + clearedNum); // 1 (0001 in binary)
 
         //Update bit
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the new bit value (0 or 1): ");
-        int val = sc.nextInt();
-        int updatePos = 1; // Position to update (0-based index)
-        int update_butMask = 1 << updatePos; // Create a bitmask by left-shifting 1 to the desired position
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the new bit value (0 or 1): ");
+            int val = sc.nextInt();
+            int updatePos = 1; // Position to update (0-based index)
+            int update_butMask = 1 << updatePos; // Create a bitmask by left-shifting 1 to the desired position
 
-        if(val == 1){
-            int newnum2 = n | update_butMask; // Use bitwise OR to set the bit
-            System.out.println("After updating bit at position " + updatePos + " to 1: " + newnum2); // 7 (0111 in binary)
-        }
-        else{
-            int update_clearBitMask = ~(1 << updatePos); // Create a bitmask by left-shifting 1 and then negating it
-            int newnum3 = n & update_clearBitMask; // Use bitwise AND to clear the bit
-            System.out.println("After updating bit at position " + updatePos + " to 0: " + newnum3); // 1 (0001 in binary)
+            if(val == 1){
+                int newnum2 = n | update_butMask; // Use bitwise OR to set the bit
+                System.out.println("After updating bit at position " + updatePos + " to 1: " + newnum2); // 7 (0111 in binary)
+            }
+            else{
+                int update_clearBitMask = ~(1 << updatePos); // Create a bitmask by left-shifting 1 and then negating it
+                int newnum3 = n & update_clearBitMask; // Use bitwise AND to clear the bit
+                System.out.println("After updating bit at position " + updatePos + " to 0: " + newnum3); // 1 (0001 in binary)
+            }
         }
     }
 }
